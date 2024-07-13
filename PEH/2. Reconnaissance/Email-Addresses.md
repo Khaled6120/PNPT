@@ -40,3 +40,5 @@ Is email enumeration OSINT?
 ## To check Email Address validity:
 ### [emailhippo](https://tools.emailhippo.com/)
 ### [email-checker](https://email-checker.net/check)
+### [Forget Password / Login Gmail / ](https://google.com)
+
