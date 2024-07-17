@@ -24,7 +24,7 @@ This sets up LDAP Secure on the Server :
 1. Use mitm6
 
 ```bash
-mitm6 -d dbz.local
+sudo mitm6 -d dbz.local
 ```
 
 ![](https://i.imgur.com/vxPlb0g.png)
