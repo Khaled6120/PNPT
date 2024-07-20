@@ -47,7 +47,7 @@ We can see the server (192.168.2.135) has signing required but the individual wi
 
 ![](https://i.imgur.com/vDnBc5f.png)
 
-Create a ``targets.txt`` file with ``192.168.2.137``: Win10-Earth Machine
+Create a ``targets.txt`` file with ``192.168.2.137`` or all machines infected IPs 
 
 ## SMB Relay Attack Part 1
 
