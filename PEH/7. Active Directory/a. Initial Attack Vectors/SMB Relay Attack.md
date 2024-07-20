@@ -3,7 +3,7 @@
 
 # SMB Relay Attack
 
-## SMB Relay Attacks Overview
+## SMB Relay Attacks Overview (Usefull in case of Strong password policy)
 
 #### What is SMB Relay?
 
