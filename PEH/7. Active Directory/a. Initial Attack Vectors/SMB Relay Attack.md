@@ -37,7 +37,7 @@ Several ways to do this:
 ### NMAP Way
 
 ```bash
-nmap --script=smb2-security-mode.nse -p445 192.168.2.0/24
+nmap --script=smb2-security-mode.nse -p445 192.168.2.0/24 -Pn
 ```
 
 Output:
