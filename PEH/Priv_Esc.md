@@ -217,6 +217,8 @@ sessions 1
 
 getuid
 #kohsuke
+
+# to check the available exploits. In this case look for pototo attacks such as /ms16_075_reflection
 run post/multi/recon/local_exploit_suggester 
 getprivs
 #Output:
