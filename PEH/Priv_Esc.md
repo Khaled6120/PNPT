@@ -269,6 +269,8 @@ getsystem
 
 getsystem -h
 ```
+![image](https://github.com/user-attachments/assets/5af03df0-c3aa-4cfa-9a38-e1837dd6425f)
+
 
 ## runas
 
