@@ -230,6 +230,7 @@ getprivs
  SeTimeZonePrivilege
  SeUndockPrivilege
 
+# QUICK WIN: in the meterpreter run: getsystem. BOOM! you are NT AUTHORITY\SYSTEM
 
 #now we can try potato exploit
 
@@ -266,6 +267,7 @@ shell
 getsystem
 #uses multiple techniques for privesc
 #can be detected by antivirus
+# try it when u have a low privileged foothold on a meterpreter session.
 
 getsystem -h
 ```
