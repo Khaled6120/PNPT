@@ -10,7 +10,7 @@
 8. [Executable Files](#executable-files)
 9. [Startup Applications](#startup-applications)
 10. [Service Permissions](#service-permissions)
-
+11. https://www.silver-garcia.com/windows-privilege-escalation/
 ## Kernel Exploits
 
 * [Reference for Windows Kernel exploits](https://github.com/SecWiki/windows-kernel-exploits)
