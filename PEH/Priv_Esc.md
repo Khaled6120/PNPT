@@ -11,6 +11,10 @@
 9. [Startup Applications](#startup-applications)
 10. [Service Permissions](#service-permissions)
 11. https://www.silver-garcia.com/windows-privilege-escalation/
+
+
+**Powerup tool** it is a tool that gives us info about all the weaknesses in our target including some processes
+
 ## Kernel Exploits
 
 * [Reference for Windows Kernel exploits](https://github.com/SecWiki/windows-kernel-exploits)
