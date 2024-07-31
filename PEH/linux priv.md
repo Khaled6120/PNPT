@@ -313,3 +313,5 @@ chmod +x linpeas.sh
 ./linpeas.sh
 
 ```
+3- Backticks (`) have the highest preference in a command.
+4- In command injection, if space()is being filtered, use ${IFS}.
